@@ -1,3 +1,5 @@
+-i https://pypi.org/simple
+openai==0.28.0
 anyio==3.6.1
 asgiref==3.5.2
 certifi==2022.6.15
