@@ -27,7 +27,7 @@ class Messages(BaseModel):
 
 @app.post('/chat')
 def post_chat(messages : Messages):
-    messages = messages.model_dump()  #dict()
+    messages = messages.dict()
     assistant_messages = chat(messages['message_list'])
     return assistant_messages
 # uvicorn main:app --reload
